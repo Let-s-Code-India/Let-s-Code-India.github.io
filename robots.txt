@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://let-s-code-india.is-a.dev/sitemap.xml

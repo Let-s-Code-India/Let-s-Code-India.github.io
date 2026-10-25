@@ -9,32 +9,57 @@
   an independent engineering playground building the software world from the ground up.
 </p>
 
-## Why this exists
+## What this site does
 
-Let's Code India isn't built around a single product or a single language. It's a
-space to explore how software actually works — systems and infrastructure,
-developer tooling and language design, AI and intelligent systems, applications
-and platforms — from first principles, in the open.
+This framework-free, static site introduces Let-s-Code-India and keeps its open
+work discoverable. It lists public GitHub Pages projects and organization
+repositories. Repository details can be expanded to read a project's Markdown
+README, with links and images resolved back to that repository.
 
-This repository is that mission's front door. It's the one place someone new to
-the organization can land, understand what we're doing and why, and find their
-way into whatever project catches their interest — without needing to already
-know which repository to look for.
+## Repository data
 
-## What it does
+`.github/workflows/update-repos.yml` refreshes `data/repos.json` every six hours,
+on pushes to `main`, and on manual dispatch. It uses the Actions-provided
+`GITHUB_TOKEN` to page through the public organization repositories and resolve
+GitHub Pages URLs. The workflow commits the generated catalog only when it
+changes. The browser loads this static file first and falls back to the public
+GitHub API if it is missing or invalid; results are cached in `sessionStorage`
+for the current tab session.
 
-The site discovers organization projects at runtime through the public GitHub API,
-so it never goes stale:
+## Run locally
 
-- **Websites** — every org repository with GitHub Pages enabled, linked to its live site.
-- **Repositories** — every public repository, each expandable to show its actual README right on the page, with a link back to the source.
+From the repository root, start Python's built-in static server:
 
-Create a new repository or turn on Pages for an existing one, and it shows up here
-automatically — nothing in this site ever needs to be manually updated to reflect
-the organization's current work.
+```sh
+python3 -m http.server 8000
+```
+
+Then open <http://localhost:8000>. The static catalog is needed for the normal
+local experience; the browser API fallback is also available if it is absent.
+
+## Deployment and domain
+
+GitHub Pages publishes the repository's `main` branch from its root. The
+`CNAME` file maps the site to `let-s-code-india.is-a.dev`; keep that file and the
+DNS configuration in sync if the domain ever changes. In the repository's
+Pages settings, use HTTPS and enable **Enforce HTTPS** when available. The
+catalog workflow needs Actions to have read and write repository permissions.
+
+## Structure
+
+- `index.html`, `styles.css`, `site-enhancements.css`, `highlight.css`: page structure and presentation.
+- `app.js`: static catalog loading, live fallback, README rendering, and filters.
+- `data/repos.json`: generated public repository catalog.
+- `fonts/`, `logo.svg`, favicon files, `og-image.png`: self-hosted brand assets.
+- `.github/workflows/update-repos.yml`: scheduled catalog generation.
+- `robots.txt`, `sitemap.xml`, `.well-known/security.txt`: crawler and security metadata.
+- `404.html`, `site.webmanifest`: not-found page and installable-site metadata.
 
 ## Contributing
 
-Changes to the organization's story or how this site presents it belong here.
-Individual project descriptions should stay in their own repositories and be
-pulled in live, not copied into this site.
+Website, accessibility, and workflow improvements are welcome. Open an issue
+for substantial changes and submit a focused pull request to `main`. Please
+preserve the contact section and custom domain, keep the site framework-free,
+and run the local server to check your changes. Follow the
+[organization-wide contribution and conduct defaults](https://github.com/Let-s-Code-India/.github)
+for additional guidance.
