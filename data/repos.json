@@ -53,15 +53,15 @@
   {
     "name": "Let-s-Code-India.github.io",
     "description": "Official organization website",
-    "language": "HTML",
+    "language": "JavaScript",
     "html_url": "https://github.com/Let-s-Code-India/Let-s-Code-India.github.io",
     "homepage": null,
     "has_pages": true,
     "pages_url": "https://let-s-code-india.is-a.dev/",
     "default_branch": "main",
-    "pushed_at": "2026-09-20T13:00:38Z",
+    "pushed_at": "2026-10-25T15:17:09Z",
     "topics": [],
-    "stargazers_count": 1,
+    "stargazers_count": 2,
     "fork": false,
     "archived": false
   },
