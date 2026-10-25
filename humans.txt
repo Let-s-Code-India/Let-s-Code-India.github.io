@@ -1,0 +1,9 @@
+/* TEAM */
+Maintainer: Ayush Giri
+GitHub: https://github.com/ayushgiriai21-cmd
+Organization: https://github.com/Let-s-Code-India
+
+/* SITE */
+Standards: HTML, CSS, JavaScript
+Software: GitHub Pages
+Fonts: Space Grotesk, DM Mono (self-hosted)

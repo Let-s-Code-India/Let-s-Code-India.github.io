@@ -1,0 +1,14 @@
+{
+  "name": "Let-s-Code-India | Engineering Playground",
+  "short_name": "Let-s-Code-India",
+  "description": "An independent engineering playground building the software world from the ground up.",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "background_color": "#fffdf7",
+  "theme_color": "#fffdf7",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
