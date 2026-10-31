@@ -47,13 +47,14 @@ catalog workflow needs Actions to have read and write repository permissions.
 
 ## Structure
 
-- `index.html`, `styles.css`, `site-enhancements.css`, `highlight.css`: page structure and presentation.
-- `app.js`: static catalog loading, live fallback, README rendering, and filters.
+- `index.html`, `styles.css`: page structure and presentation.
+- `app.js`: static catalog loading, live fallback, lazy README rendering, and filters.
 - `data/repos.json`: generated public repository catalog.
+- `vendor/`: pinned, self-hosted libraries loaded when a README is opened.
 - `fonts/`, `logo.svg`, favicon files, `og-image.png`: self-hosted brand assets.
 - `.github/workflows/update-repos.yml`: scheduled catalog generation.
 - `robots.txt`, `sitemap.xml`, `.well-known/security.txt`: crawler and security metadata.
-- `404.html`, `site.webmanifest`: not-found page and installable-site metadata.
+- `404.html`, `site.webmanifest`, `llms.txt`: not-found page, installable-site metadata, and machine-readable site notes.
 
 ## Contributing
 

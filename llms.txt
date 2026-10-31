@@ -1,0 +1,11 @@
+# Let-s-Code-India
+
+> Static website for the Let-s-Code-India organization, listing public repositories and project websites.
+
+## Pages
+- [Home](https://let-s-code-india.is-a.dev/): Organization website and project directory.
+
+## Resources
+- [GitHub organization](https://github.com/Let-s-Code-India): Public organization profile and repositories.
+- [Repository catalog](https://let-s-code-india.is-a.dev/data/repos.json): Generated repository catalog used by the website.
+- [security.txt](https://let-s-code-india.is-a.dev/.well-known/security.txt): Security contact and disclosure policy.
