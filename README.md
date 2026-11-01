@@ -40,7 +40,7 @@ local experience; the browser API fallback is also available if it is absent.
 ## Deployment and domain
 
 GitHub Pages publishes the repository's `main` branch from its root. The
-`CNAME` file maps the site to `let-s-code-india.is-a.dev`; keep that file and the
+`CNAME` file maps the site to `let-s-code-india.github.io`; keep that file and the
 DNS configuration in sync if the domain ever changes. In the repository's
 Pages settings, use HTTPS and enable **Enforce HTTPS** when available. The
 catalog workflow needs Actions to have read and write repository permissions.
