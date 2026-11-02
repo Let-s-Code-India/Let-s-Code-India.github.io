@@ -4,6 +4,11 @@
 
 ## Pages
 - [Home](https://let-s-code-india.github.io/): Organization website and project directory.
+- [Contact](https://let-s-code-india.github.io/contact/): Contact details and reporting links.
+- [Privacy Policy](https://let-s-code-india.github.io/privacy/): Browser storage, service requests, and analytics.
+- [Terms of Use](https://let-s-code-india.github.io/terms/): Website terms, project licenses, and governing law.
+- [Security](https://let-s-code-india.github.io/security/): Private vulnerability reporting and site protections.
+- [Licenses](https://let-s-code-india.github.io/licenses/): Site and third-party license attributions.
 
 ## Resources
 - [GitHub organization](https://github.com/Let-s-Code-India): Public organization profile and repositories.

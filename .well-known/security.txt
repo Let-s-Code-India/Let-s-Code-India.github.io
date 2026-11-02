@@ -3,4 +3,5 @@ Contact: mailto:ayushgiri.dev1@outlook.com
 Contact: mailto:ayushgiri.25@icloud.com
 Expires: 2027-10-25T00:00:00.000Z
 Preferred-Languages: en, hi
-Canonical: https://let-s-code-india.is-a.dev/.well-known/security.txt
+Canonical: https://let-s-code-india.github.io/.well-known/security.txt
+Policy: https://let-s-code-india.github.io/security/

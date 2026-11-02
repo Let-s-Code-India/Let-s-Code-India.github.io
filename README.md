@@ -39,19 +39,22 @@ local experience; the browser API fallback is also available if it is absent.
 
 ## Deployment and domain
 
-GitHub Pages publishes the repository's `main` branch from its root. The
-`CNAME` file maps the site to `let-s-code-india.github.io`; keep that file and the
-DNS configuration in sync if the domain ever changes. In the repository's
-Pages settings, use HTTPS and enable **Enforce HTTPS** when available. The
-catalog workflow needs Actions to have read and write repository permissions.
+GitHub Pages publishes the repository's `main` branch from its root at the
+default domain `let-s-code-india.github.io`. The `CNAME` file contains that same
+default Pages hostname. In the
+repository's Pages settings, use HTTPS and enable **Enforce HTTPS** when
+available. The catalog workflow needs Actions to have read and write repository
+permissions.
 
 ## Structure
 
 - `index.html`, `styles.css`: page structure and presentation.
-- `app.js`: static catalog loading, live fallback, lazy README rendering, and filters.
+- `app.js`, `site.js`, `analytics.js`: homepage catalog and README logic, shared navigation, and delayed analytics loading.
+- `contact/`, `privacy/`, `terms/`, `security/`, `licenses/`: static information and policy pages.
 - `data/repos.json`: generated public repository catalog.
 - `vendor/`: pinned, self-hosted libraries loaded when a README is opened.
-- `fonts/`, `logo.svg`, favicon files, `og-image.png`: self-hosted brand assets.
+- `fonts/`, `logo.svg`, favicon files, `og-image.png`: self-hosted brand assets; font OFL notices are in `fonts/`.
+- `THIRD_PARTY_LICENSES.md`: bundled library and font license texts.
 - `.github/workflows/update-repos.yml`: scheduled catalog generation.
 - `robots.txt`, `sitemap.xml`, `.well-known/security.txt`: crawler and security metadata.
 - `404.html`, `site.webmanifest`, `llms.txt`: not-found page, installable-site metadata, and machine-readable site notes.
@@ -60,7 +63,7 @@ catalog workflow needs Actions to have read and write repository permissions.
 
 Website, accessibility, and workflow improvements are welcome. Open an issue
 for substantial changes and submit a focused pull request to `main`. Please
-preserve the contact section and custom domain, keep the site framework-free,
-and run the local server to check your changes. Follow the
+preserve the homepage contact section, retain the default GitHub Pages domain,
+keep the site framework-free, and run the local server to check your changes. Follow the
 [organization-wide contribution and conduct defaults](https://github.com/Let-s-Code-India/.github)
 for additional guidance.
