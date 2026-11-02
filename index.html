@@ -1,15 +1,16 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta name="google-site-verification" content="iGLo9iAYt8rBXmn00Bt_4K-mzk7dttUwD9DI6ZzGi1s" />
+  <meta name="google-site-verification" content="iGLo9iAYt8rBXmn00Bt_4K-mzk7dttUwD9DI6ZzGi1s">
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <meta name="description" content="Explore open-source systems, developer tools, intelligent software, and applications from Let-s-Code-India, an independent engineering playground.">
   <meta name="referrer" content="strict-origin-when-cross-origin">
   <meta name="theme-color" content="#fffdf7" media="(prefers-color-scheme: light)">
   <meta name="theme-color" content="#17151d" media="(prefers-color-scheme: dark)">
-  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self'; font-src 'self'; img-src 'self' data: https://*.githubusercontent.com https://img.shields.io https://github.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com; base-uri 'self'; form-action 'none'">
+  <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self' https://www.googletagmanager.com; style-src 'self'; font-src 'self'; img-src 'self' data: https://*.githubusercontent.com https://img.shields.io https://github.com https://*.google-analytics.com https://*.googletagmanager.com; connect-src 'self' https://api.github.com https://raw.githubusercontent.com https://*.google-analytics.com https://*.analytics.google.com https://*.googletagmanager.com; base-uri 'self'; form-action 'none'">
   <title>Let-s-Code-India | Open Engineering Playground</title>
+  <link rel="stylesheet" href="styles.css">
   <link rel="canonical" href="https://let-s-code-india.github.io/">
   <meta property="og:title" content="Let-s-Code-India | Open Engineering Playground">
   <meta property="og:description" content="An independent engineering playground building the software world from the ground up, in the open.">
@@ -33,8 +34,7 @@
   <link rel="apple-touch-icon" href="apple-touch-icon.png">
   <link rel="manifest" href="site.webmanifest">
   <link rel="preload" href="fonts/space-grotesk-latin.woff2" as="font" type="font/woff2" crossorigin>
-  <link rel="preload" href="styles.css" as="style">
-  <noscript><link rel="stylesheet" href="styles.css"></noscript>
+  <link rel="preload" href="fonts/dm-mono-400.woff2" as="font" type="font/woff2" crossorigin>
   <script type="application/ld+json">
     {
       "@context": "https://schema.org",
@@ -69,9 +69,20 @@
         <p class="nav-label">Explore</p>
         <a href="#mission">Mission</a>
         <a href="#about">About</a>
+        <a href="#focus">What we build</a>
+        <a href="#how-we-work">How we work</a>
         <p class="nav-label">Open work</p>
         <a href="#websites">Websites <b id="website-count">—</b></a>
         <a href="#repositories">Repositories <b id="repo-count">—</b></a>
+        <p class="nav-label">More</p>
+        <a href="#freshness">Site updates</a>
+        <a href="#contribute">Contribute</a>
+        <a href="#faq">FAQ</a>
+        <a href="/contact/">Contact</a>
+        <a href="/privacy/">Privacy</a>
+        <a href="/terms/">Terms</a>
+        <a href="/security/">Security</a>
+        <a href="/licenses/">Licenses</a>
       </nav>
       <div class="sidebar-footer"><a href="https://github.com/Let-s-Code-India">GitHub ↗</a><a href="https://github.com/Let-s-Code-India/.github">Profile ↗</a></div>
     </aside>
@@ -95,7 +106,17 @@
 
       <section class="intro-grid" id="about">
         <div><p class="kicker">THE NORTH STAR</p><h2>Start with first principles. Follow the question.</h2></div>
-        <div><p>There are no fixed boundaries here. We study how things work, take them apart, and build new versions with the details still visible. The result is an open engineering playground where a small experiment can become a useful tool, a language, a platform, or a new way to think.</p><p>Open collaboration keeps the work honest. Every repository is an invitation to inspect, learn, improve, and carry an idea somewhere unexpected.</p><div class="principle-list"><span>01 / Understand the foundations</span><span>02 / Make useful things</span><span>03 / Share the work openly</span></div></div>
+        <div><p>There are no fixed boundaries here. We study how things work, take them apart, and build new versions with the details still visible. The result is an open engineering playground where a small experiment can become a useful tool, a language, a platform, or a new way to think.</p><p>Open collaboration keeps the work honest. Every repository is an invitation to inspect, learn, improve, and carry an idea somewhere unexpected.</p><h3 id="how-we-work" class="principle-heading">How we work</h3><div class="principle-list"><span><strong>01 / Understand the foundations</strong><small>Start with the underlying idea, not only its surface. Make the moving parts visible so the work can be questioned and learned from.</small></span><span><strong>02 / Make useful things</strong><small>Turn curiosity into software people can inspect and try. Keep experiments focused on a real question or practical use.</small></span><span><strong>03 / Share the work openly</strong><small>Publish the code and project notes in the open. Invite others to review, improve, and take an idea further.</small></span></div></div>
+      </section>
+
+      <section class="content-section" id="focus">
+        <div class="section-heading"><p class="kicker">FOUR DIRECTIONS</p><h2>What we build</h2><p>The orbit labels are a map of the questions we like to follow.</p></div>
+        <div class="website-grid focus-grid">
+          <article class="website-card"><h3>Systems</h3><p>Explore the foundations that make software languages and platforms work.</p></article>
+          <article class="website-card"><h3>Tools</h3><p>Build practical tools that make development and creative work more approachable.</p></article>
+          <article class="website-card"><h3>Intelligence</h3><p>Experiment with intelligent software and the ways people can work with it.</p></article>
+          <article class="website-card"><h3>Applications</h3><p>Bring ideas together in software people can run, inspect, and improve.</p></article>
+        </div>
       </section>
 
       <section class="content-section collection-section" id="websites">
@@ -118,21 +139,42 @@
         <p class="empty-message" id="repo-empty" hidden>No repositories match those filters. Try another search or language.</p>
       </section>
 
-      <section class="about-band"><img class="about-logo" src="logo.svg" alt="Let-s-Code-India logo" width="130" height="130" loading="lazy" decoding="async"><div><p class="kicker">COME BUILD WITH US</p><h2>Good work gets better in the open.</h2><p>Browse a project, read its README, open an issue, or bring a new question to the organization. The map is deliberately unfinished.</p><p class="maintainer-note">Maintained by <a href="https://github.com/ayushgiriai21-cmd" target="_blank" rel="noopener noreferrer">Ayush Giri ↗</a></p><div class="about-links"><a href="https://github.com/Let-s-Code-India">Organization on GitHub ↗</a><a href="#top">Back to the top ↑</a></div><div class="contact-block" id="contact"><p class="kicker">GET IN TOUCH</p><h3>Bring a question or an idea.</h3><div class="contact-links"><a href="mailto:ayushgiri.ai.21@gmail.com">ayushgiri.ai.21@gmail.com</a><a href="mailto:ayushgiri.dev1@outlook.com">ayushgiri.dev1@outlook.com</a><a href="mailto:ayushgiri.25@icloud.com">ayushgiri.25@icloud.com</a></div></div></div></section>
-      <footer><span>Let-s-Code-India · Engineering playground</span><span>Open collaboration · <a href="https://github.com/Let-s-Code-India">GitHub</a></span></footer>
+      <section class="content-section" id="freshness">
+        <div class="section-heading"><p class="kicker">A LIVING CATALOG</p><h2>How this site stays fresh</h2><p>The directory is generated from public organization data, with project notes loaded only when requested.</p></div>
+        <ol class="fresh-steps">
+          <li>The GitHub Actions workflow refreshes the repository catalog every six hours, and also runs on pushes to <code>main</code> and manual dispatch.</li>
+          <li>The workflow writes the generated catalog to <code>data/repos.json</code>.</li>
+          <li>After checking the current tab's session cache, the browser reads the static JSON; it uses GitHub's API only if that file is missing or unusable.</li>
+          <li>Normal visits use the static catalog and do not need a GitHub API request.</li>
+          <li>README files and their rendering libraries load lazily when you select “View Details”.</li>
+        </ol>
+      </section>
+
+      <section class="content-section" id="contribute">
+        <div class="section-heading"><p class="kicker">OPEN COLLABORATION</p><h2>Contribute</h2><p>Useful changes can start with a clear question, a bug report, or a focused improvement.</p></div>
+        <p>Open an <a href="https://github.com/Let-s-Code-India/Let-s-Code-India.github.io/issues">issue</a> to discuss a problem or idea. For a concrete change, send a focused pull request to the website repository so it is straightforward to review.</p>
+        <p>For organization-wide expectations, read the <a href="https://github.com/Let-s-Code-India/.github">contribution and conduct defaults</a>. You can also explore and contribute to the <a href="https://github.com/Let-s-Code-India">organization's projects</a>.</p>
+      </section>
+
+      <section class="content-section" id="faq">
+        <div class="section-heading"><p class="kicker">QUICK ANSWERS</p><h2>FAQ</h2></div>
+        <div class="faq-list">
+          <details><summary>What is Let's Code India?</summary><p>An independent engineering playground for open work across systems, tools, intelligent software, and applications.</p></details>
+          <details><summary>Can I contribute?</summary><p>Yes. Open an issue or send a focused pull request, and follow the organization's contribution and conduct defaults.</p></details>
+          <details><summary>Where does the repository data come from?</summary><p>A GitHub Actions workflow refreshes <code>data/repos.json</code> every six hours. The site reads that static catalog before using the public API fallback.</p></details>
+          <details><summary>How do I report a security issue?</summary><p>Use the private reporting instructions on the <a href="/security/">Security page</a>. Do not post exploit details in a public issue.</p></details>
+          <details><summary>Who maintains this site?</summary><p>The site currently identifies <a href="https://github.com/ayushgiriai21-cmd">Ayush Giri</a> as its maintainer.</p></details>
+        </div>
+      </section>
+
+      <section class="about-band"><img class="about-logo" src="logo.svg" alt="Let-s-Code-India logo" width="130" height="130" loading="lazy" decoding="async"><div><p class="kicker">COME BUILD WITH US</p><h2>Good work gets better in the open.</h2><p>Browse a project, read its README, open an issue, or bring a new question to the organization. The map is deliberately unfinished.</p><p class="maintainer-note">Maintained by <a href="https://github.com/ayushgiriai21-cmd" target="_blank" rel="noopener noreferrer">Ayush Giri ↗</a></p><div class="about-links"><a href="https://github.com/Let-s-Code-India">Organization on GitHub ↗</a><a href="#top">Back to the top ↑</a></div><div class="contact-block" id="contact"><p class="kicker">GET IN TOUCH</p><h3>Bring a question or an idea.</h3><div class="contact-links"><a href="mailto:ayushgiri.ai.21@gmail.com">ayushgiri.ai.21@gmail.com</a><a href="mailto:ayushgiri.dev1@outlook.com">ayushgiri.dev1@outlook.com</a><a href="mailto:ayushgiri.25@icloud.com">ayushgiri.25@icloud.com</a></div><a class="more-details" href="/contact/">More details about getting in touch →</a></div></div></section>
+      <footer><nav aria-label="Legal"><a href="/privacy/">Privacy</a> · <a href="/terms/">Terms</a> · <a href="/security/">Security</a> · <a href="/licenses/">Licenses</a> · <a href="/contact/">Contact</a></nav><span>© 2026 Let's Code India · Source code under the <a href="/LICENSE">MIT License</a></span></footer>
     </main>
   </div>
 
   <noscript><p class="noscript-message">JavaScript is required to load the project directory. Visit <a href="https://github.com/Let-s-Code-India">Let-s-Code-India on GitHub</a> to explore our open-source work.</p></noscript>
-  <script src="app.js" defer></script>
-  <!-- Google tag (gtag.js) -->
-<script async src="https://www.googletagmanager.com/gtag/js?id=G-MNY0YNYCZS"></script>
-<script>
-  window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
-
-  gtag('config', 'G-MNY0YNYCZS');
-</script>
+  <script src="/site.js" defer></script>
+  <script src="/analytics.js" defer></script>
+  <script src="/app.js" defer></script>
 </body>
 </html>
