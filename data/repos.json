@@ -8,7 +8,7 @@
     "has_pages": false,
     "pages_url": "",
     "default_branch": "main",
-    "pushed_at": "2026-11-16T00:04:57Z",
+    "pushed_at": "2026-11-16T06:28:45Z",
     "topics": [
       "borrow-checker",
       "compiler",
@@ -91,7 +91,7 @@
     "has_pages": true,
     "pages_url": "https://let-s-code-india.github.io/",
     "default_branch": "main",
-    "pushed_at": "2026-11-15T18:50:33Z",
+    "pushed_at": "2026-11-16T06:27:12Z",
     "topics": [],
     "stargazers_count": 2,
     "fork": false,
@@ -130,27 +130,24 @@
     "archived": false
   },
   {
-    "name": "Let-s-Code-India-UI-Builder",
-    "description": "Official elite-grade UI/UX & Frontend Design System skill by Let-s-Code-India. Generates production-ready React, TypeScript, and Tailwind CSS interfaces enforcing 400+ design rules and WCAG standards.",
-    "language": "Python",
-    "html_url": "https://github.com/Let-s-Code-India/Let-s-Code-India-UI-Builder",
-    "homepage": "https://let-s-code-india.github.io",
+    "name": "Skill-World.AI",
+    "description": "AI-powered collaborative skill development and open-source learning platform built for community-driven innovation.",
+    "language": null,
+    "html_url": "https://github.com/Let-s-Code-India/Skill-World.AI",
+    "homepage": "let-s-code-india.github.io",
     "has_pages": false,
     "pages_url": "",
     "default_branch": "main",
-    "pushed_at": "2026-11-01T07:48:41Z",
+    "pushed_at": "2026-11-16T14:17:48Z",
     "topics": [
-      "accessibility",
-      "component-library",
-      "design-system",
-      "frontend-architecture",
-      "react",
-      "tailwindcss",
-      "ui-ux",
-      "ui-ux-design",
-      "web-development"
+      "artificial-intelligence",
+      "collaborative-learning",
+      "edtech",
+      "machine-learning",
+      "open-source",
+      "skill-world"
     ],
-    "stargazers_count": 2,
+    "stargazers_count": 0,
     "fork": false,
     "archived": false
   }
